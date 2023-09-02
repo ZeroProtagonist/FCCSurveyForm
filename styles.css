@@ -1,0 +1,72 @@
+#title {
+    color: whitesmoke;
+    font-size: 33px;
+    font-family: monospace;
+  }
+  
+  #description {
+  color:whitesmoke;
+  font-family: monospace;
+  }
+  
+  p {
+    font-size: 22px;
+  }
+  
+  body {
+    background-image: url(https://images.pexels.com/photos/3696395/pexels-photo-3696395.jpeg);
+    background-size: cover;
+  }
+  
+  h3 {
+    font-size: 16px;
+  }
+  
+  .purple-text {
+    color: purple;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .thick-white-border {
+    border-color: whitesmoke;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 10px;
+  }
+  
+  
+  #survey-form {
+    font-family: monospace; 
+    text-align: left;
+    background-color: rgba(0, 51, 102, .5);
+    color: whitesmoke;
+    padding-bottom: 15pt;
+    padding-top: 15pt;
+    padding-left: 5pt;
+  }
+  
+  label {
+    display: flex;
+  } 
+  
+  #submit {
+    box-sizing: content-box;
+    block-size: 33%;
+  }
+  
+  .input-textarea {
+    min-height: 60px;
+    min-width: 75%;
+    padding: 0.625rem;
+    resize: vertical;
+  }
+  
+  .submit-button {
+    display: block;
+    padding: 0.75rem;
+    border-radius: 2px;
+    cursor: pointer;
+  }

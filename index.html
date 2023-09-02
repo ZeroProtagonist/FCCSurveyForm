@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+
+
+<!--<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>-->
+<style src="style.css"></style>
+
+<div class="container">
+    <header class="header">
+        <h1 id="title" class="text-center">What are the best spots in Eugene?</h1>
+        <p id="description" class="text-center">
+            Tell us your favorite places to catch live music, watch a comedian, or just hang out in Eugene, OR.</p>
+    </header>
+    <form id="survey-form" class="thick-white-border">
+        <div class="form-group">
+            <label id="name-label" for="name">Name:</label>
+            <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
+        </div>
+        <div class="form-group">
+            <label id="email-label" for="email">Email:</label>
+            <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required />
+        </div>
+        <div class="form-group">
+            <label id="number-label" for="number">Age (optional):</label>
+            <input type="number" name="age" id="number" min="1" max="99" class="form-control" placeholder="Age" />
+        </div>
+        <div class="form-group">
+            <h3>Where is the best place to see live music?</h3>
+            <select id="dropdown" name="music-venue" class="form-control" required>
+                <option>Select music venue</option>
+              
+                <option value="hult">The Hult Center</option>
+              
+              <option value="johnhenrys">John Henry's</option>
+
+                <option value="mcdonald">McDonald Theatre</option>
+
+                <option value="oldnicks">Old Nick's</option>
+
+                <option value="sambonds">Sam Bond's Garage</option>
+
+                <option value="sessions">Sessions Music Hall</option>
+
+                <option value="shedd">The Shedd Institute</option>
+
+                <option value="wow">WOW Hall</option>
+
+                <option value="other">Other</option>
+            </select>
+            <h3>
+                Where is the best place to see comedy?
+            </h3>
+            <select id="comedy-venue" name="comedyvenue" class="form-control" required>
+                <option disabled selected value>Select comedy venue</option>
+                <option value="hult">Hult Center</option>
+
+                <option value="mcdonald">McDonald Theatre</option>
+
+                <option value="whirledpies">Whirled Pies</option>
+
+
+                <option value="other">Other</option>
+            </select>
+            <h3> What do you like to do when you go out in Eugene? (Check all that apply) </h3>
+            <label>
+                <input name="todo" value="music" type="checkbox" class="input-checkbox">
+                    Watch live music.</label>
+
+            <label>
+                <input name="todo" value="comedy" type="checkbox" class="input-checkbox">
+                Watch comedians perform.</label>
+          
+          <label>
+                <input name="todo" value="trivia" type="checkbox" class="input-checkbox">
+                Play trivia.</label>
+
+            <label>
+                <input name="todo" value="drink" type="checkbox" class="input-checkbox">
+                Get a drink.</label>
+
+            <h3>Do you think Eugene has a good music/arts/cultural scene?</h3>
+            <label>
+                <input name="eug-scene" value="heckyeah" type="radio" class="input-radio" checked />Heck
+                yeah!</label>
+
+            <label>
+                <input name="eug-scene" value="kinda" type="radio" class="input-radio" />Could be better.</label>
+
+            <label>
+                <input name="eug-scene" value="not-portland" type="radio" class="input-radio" />Well... it's no
+                Portland.</label>
+
+            <h3>What do you think of Eugene's culinary scene?</h3>
+               <label> 
+                   <input name="food-scene" value="tasty" type=radio class="input-radio" checked />Tasty!</label>
+                <label> 
+                    <input name="food-scene" value="food-trucks" type=radio class="input-radio" />I hope you like food trucks!</label>
+                <label> 
+                    <input name="food-scene" value="IPA" type=radio class="input-radio" /> You can have any kind of beer you like, so long as it's an IPA ;)</label>
+
+            <h3>If you have any other thoughts on fun things to do in Eugene, let us know right here!</h3>
+            <textarea id="comments" class="input-textarea" name="comment"
+                placeholder="Enter your comment here."></textarea>
+
+            <button type="submit" id="submit" class="submit-button">
+                Submit
+            </button>
+        </div>
+    </form>
+</div>
+
+</html>
